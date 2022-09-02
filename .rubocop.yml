@@ -5,6 +5,7 @@ require:
 AllCops:
   TargetRubyVersion: 2.6
   NewCops: enable
+  SuggestExtensions: false
   Include:
   - "**/*.rb"
   - "**/*file"
@@ -35,6 +36,8 @@ Style/SafeNavigation:
 Performance/RegexpMatch:
   Enabled: false
 Performance/StringReplacement:
+  Enabled: false
+Performance/StringIdentifierArgument:
   Enabled: false
 Style/NumericPredicate:
   Enabled: false
@@ -70,17 +73,12 @@ Require/MissingRequireStatement:
   - "**/Rakefile"
   - fastlane/**/*
   - supply/**/*
-Layout/FirstHashElementIndentation:
-  Enabled: false
-Layout/HashAlignment:
-  Enabled: false
-Layout/DotPosition:
+  - lib/**/*
+Layout:
   Enabled: false
 Style/DoubleNegation:
   Enabled: false
 Style/SymbolArray:
-  Enabled: false
-Layout/HeredocIndentation:
   Enabled: false
 Style/MixinGrouping:
   Exclude:
@@ -116,8 +114,6 @@ Style/AndOr:
   EnforcedStyle: conditionals
 Metrics/ClassLength:
   Max: 320
-Layout/LineLength:
-  Max: 370
 Metrics/ParameterLists:
   Max: 17
 Style/GuardClause:
@@ -137,9 +133,6 @@ Naming/PredicateName:
   Enabled: false
 Style/PerlBackrefs:
   Enabled: false
-Layout/SpaceAroundOperators:
-  Exclude:
-  - "**/spec/actions_specs/xcodebuild_spec.rb"
 Naming/FileName:
   Exclude:
   - "**/Dangerfile"
