@@ -1,5 +1,5 @@
 module Fastlane
-	module Sim
+	module Applesdk
 		VERSION = "0.1.0"
 	end
 end

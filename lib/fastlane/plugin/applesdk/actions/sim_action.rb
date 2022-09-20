@@ -1,5 +1,5 @@
 require 'fastlane/action'
-require_relative '../helper/sim_helper'
+require_relative '../helper/applesdk_helper'
 
 
 module Fastlane
