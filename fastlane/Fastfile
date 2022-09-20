@@ -1,3 +1,13 @@
+# ----------------------------------------------------------------------
+#
+# Fastfile
+# https://docs.fastlane.tools
+#
+# ----------------------------------------------------------------------
+
+require 'simctl'
+
 lane :test do
-	sim
+	runtime = SimCtl.runtime(name: 'iOS 15.5')
+	UI.message runtime
 end
