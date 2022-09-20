@@ -156,26 +156,4 @@ Style/IfInsideElse:
 Style/CollectionMethods:
   Enabled: false
 Style/MethodCallWithArgsParentheses:
-  Enabled: true
-  IgnoredMethods:
-  - require
-  - require_relative
-  - fastlane_require
-  - gem
-  - program
-  - command
-  - raise
-  - attr_accessor
-  - attr_reader
-  - desc
-  - lane
-  - private_lane
-  - platform
-  - to
-  - not_to
-  - describe
-  - it
-  - be
-  - context
-  - before
-  - after
+  Enabled: false
